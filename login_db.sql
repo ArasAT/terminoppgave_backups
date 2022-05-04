@@ -36,6 +36,7 @@ CREATE TABLE `help` (
 
 LOCK TABLES `help` WRITE;
 /*!40000 ALTER TABLE `help` DISABLE KEYS */;
+INSERT INTO `help` VALUES (196376,'hibla@hibla1.com','TEsyaudgadihsd\r\n');
 /*!40000 ALTER TABLE `help` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +62,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,6679967767681,'wuwfrrngiifayrymec@kvhrr.com','cc03e747a6afbbcbf8be7668acfebee5'),(2,1625859693425913,'test@dyastdg.com','cc03e747a6afbbcbf8be7668acfebee5'),(3,78230,'hibla@hibla.com','b13652e9b06587afd85afed4eddd3d62');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -74,4 +74,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-04 14:01:05
+-- Dump completed on 2022-05-04 14:02:52
