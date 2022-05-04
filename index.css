@@ -1,0 +1,498 @@
+body {
+    background-color: transparent;
+}
+
+html {
+    height:100%;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+/*Color palette:*/
+/*#0B0C10*/
+/*#1F2833*/
+/*#C5C6C7*/
+/*#66FCF1*/
+/*#45A29E*/
+
+/*------------------------------Login and Signup*/
+
+#text {
+    height: 25px;
+    border-radius: 100px;
+    padding: 4px;
+    border: solid thin #C5C6C7;
+    width: 200px;
+    float: none;
+    background-color: #C5C6C7;
+}
+
+#buttonsign {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    display: none;
+}
+
+#buttonsign:hover {
+    background-color: #45A29E;
+    cursor: pointer;
+}
+
+#buttonsignX {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    display: block;
+}
+
+#buttonsignX:hover {
+    background-color: #ff0000;
+    cursor: no-drop;
+}
+
+#button {
+    margin-left: 50px;
+    margin-right: auto;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+}
+
+#button:hover {
+    background-color: #45A29E;
+    cursor: pointer;
+}
+
+#box {
+    background-color: #1F2833;
+    margin: auto;
+    align-content: center;
+    width: 300px;
+    height: 380px;
+    border-radius: 100px;
+    border: 3px;
+    border-style: solid;
+    border-color: #45A29E;
+    margin-top: 150px;
+    
+}
+
+#boxsign {
+    background-color: #1F2833;
+    margin: auto;
+    align-content: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 100px;
+    border: 3px;
+    border-style: solid;
+    border-color: #45A29E;
+    margin-top: 150px;
+    
+}
+
+#checkBox {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: -100px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#checkboxtext {
+    cursor: pointer;
+}
+
+.phpwarning {
+    display: none;
+}
+
+.agree {
+    margin-left: 10px;
+    font-size: 18px;
+    
+}
+
+.link {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.terms {
+    color: #66FCF1;
+    text-decoration: none;
+    width: 290px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.php {
+    color: rgb(255, 0, 0);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.headertext {
+    color: #66FCF1;
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.uptext {
+    text-decoration: none;
+    font-size: 20px;
+    color: #66FCF1;
+}
+
+.uptextbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+
+.uptext:hover {
+    color: #45A29E;
+}
+
+.inputboxes {
+    border-left: 100px;
+}
+
+.inputs {
+    margin-left: 45px;
+}
+
+.help_box {
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.help_text {
+    text-decoration: none;
+    font-size: 20px;
+    color: #66FCF1;
+}
+
+.help_text_link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #66FCF1;
+    font-weight: bold;
+}
+
+/*------------------------------Help page*/
+
+#titlehelp {
+    height: 30px;
+    border-radius: 100px;
+    padding: 4px;
+    border: solid thin #C5C6C7;
+    width: 290px;
+    float: none;
+    background-color: #C5C6C7;
+    margin-left: 180px;
+    margin-top: 8px;
+}
+
+#texthelp {
+    height: 25px;
+    border-radius: 10px;
+    padding: 4px;
+    border: solid thin #C5C6C7;
+    width: 450px;
+    height: 400px;
+    float: none;
+    background-color: #C5C6C7;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#boxhelp {
+    background-color: #1F2833;
+    margin: auto;
+    align-content: center;
+    width: 500px;
+    height: 630px;
+    border-radius: 100px;
+    border: 3px;
+    border-style: solid;
+    border-color: #45A29E;
+    margin-top: 150px;
+    
+}
+
+#buttonhelp {
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+}
+
+#buttonhelp:hover {
+    background-color: #45A29E;
+    cursor: pointer;
+}
+
+#backbutton {
+    margin-left: 20px;
+    margin-top: 67px;
+    margin-bottom: -30px;
+    margin-right: auto;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    position: absolute;
+    display: block;
+}
+
+#the-count {
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 0;
+}
+
+.headertexthelp {
+    color: #66FCF1;
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*------------------------------Index page*/
+
+#theText {
+    display: none;
+}
+
+#bigbox {
+    width: 820px;
+    background-color: #1F2833;
+    height: 630px;    
+}
+
+.logout {
+    margin-left: 700px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #66FCF1;
+}
+
+.logout:hover {
+    color: #45A29E;
+}
+
+.h1text {
+    color: #66FCF1;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h3text {
+    color: #66FCF1;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.download {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    width: 200px;
+}
+
+.download:hover {
+    color: #45A29E;
+}
+
+.downloadbox {
+    width: 200px;
+    height: 60px;
+    background-color: #66FCF1;
+    border-radius: 100px;
+    
+}
+
+.normaltext{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.button{
+    color: #000000;
+    background-color: #66FCF1;
+    width: 220px;
+    height: 60px;
+    border: none;
+    border-radius: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.controlls_img_WASD {
+    width: 150px;
+}
+
+.controlls_img_JK {
+    width: 100px;
+}
+
+.controlls_box {
+    width: 500px;
+    height: 200px;
+}
+
+.WASD {
+    width: 200px;
+    height: 200px;
+    align-content: flex-start;
+    float: left;
+}
+
+.JK {
+    width: 200px;
+    height: 200px;
+    align-content: flex-start;
+    float: right;
+}
+
+.showTextButton {
+    color: #000000;
+    background-color: #66FCF1;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*------------------------------Law Page*/
+
+#bigboxlaw{
+    width: 820px;
+    background-color: #1F2833;
+    height: 5850px;  
+}
+
+.lilaw {
+    color: #ffffff;
+}
+
+.h1law {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.h2law {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.h3law {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.alaw {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.lilaw {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.plaw {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.lawtext{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: left;
+    line-height: 30px;
+}
+
+/*------------------------------Remove scrollwheel*/
+::-webkit-scrollbar {
+    width: 0px;
+}
