@@ -3,26 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
-</head>
-<body>
-    <div id="game">
-        <p id="gameover"></p>
-        <div id="block"></div>
-        <div id="hole"></div>
-        <div id="character"></div>
-    </div>
-
-
-        <p id="score">Score: 0</p>
-        <center>
-        <button id="buttonjump" onclick="jump()">Click to jump</button>
-        <br><br>
-        <button id="restartgame" onClick="window.location.reload();">Restart</button>
-        </center>
-        
-        
-</body>
-<script src="scriptflappy.js"></script>
 <style>
     *{
     padding: 0;
@@ -124,4 +104,24 @@ html {
     color: black;
 }
 </style>
+</head>
+<body>
+    <div id="game">
+        <p id="gameover"></p>
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character"></div>
+    </div>
+
+
+        <p id="score">Score: 0</p>
+        <center>
+        <button id="buttonjump" onclick="jump()">Jump (Space)</button>
+        <br><br>
+        <button id="restartgame" onClick="window.location.reload();">Restart (Enter)</button>
+        </center>
+        
+        
+</body>
+<script src="scriptflappy.js"></script>
 </html>

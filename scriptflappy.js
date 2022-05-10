@@ -16,6 +16,12 @@ if (e.key == " " || e.code == "Space" || e.keyCode == 32){
     jump();
 }};
 
+document.addEventListener("keyup", function(event) {
+if ((event.code === 'Enter') && (stop == true)) {
+    location.reload();
+}
+});
+
 //Points for going through openings
 hole.addEventListener('animationiteration', () => {
     if (stop == true) {
