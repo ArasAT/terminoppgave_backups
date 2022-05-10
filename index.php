@@ -80,8 +80,28 @@ session_start();
 
 </body>
 
-<!--Show text buton script-->
+
 <script>
+
+//Easteregg???
+var score_sound = new Audio('score_sound.mp3');
+var enterkeycount = 0;
+
+    document.addEventListener("keyup", function(event) {
+    if (event.code === 'Space') {
+        score_sound.currentTime = 0;
+        score_sound.play();
+        enterkeycount++;
+        if(enterkeycount == 5)
+        {
+            document.location.href = 'flappy.html';
+        }
+    }
+    });
+
+
+
+//Show text buton script
     function showText()
         {
             var text = document.getElementById("theText");

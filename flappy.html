@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <div id="game">
+        <p id="gameover"></p>
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character"></div>
+    </div>
+
+
+        <p id="score">Score: 0</p>
+        <center>
+        <button id="buttonjump" onclick="jump()">Click to jump</button>
+        <br><br>
+        <button id="restartgame" onClick="window.location.reload();">Restart</button>
+        </center>
+        
+        
+</body>
+<script src="scriptflappy.js"></script>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+html {
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+#game{
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-color: #243b55;
+    
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: #66FCF1;
+    position: relative;
+    left: 600px;
+    animation: block 1.5s infinite linear;
+    
+}
+@keyframes block{
+    0%{left:600px}
+    100%{left:-200px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: #243b55;
+    position: relative;
+    left: 600px;
+    top: -500px;
+    animation: block 1.5s infinite linear;
+    
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+    
+}
+#score{
+    font-size: 70px;
+    color: #66FCF1;
+    margin: auto;
+    width: 600px;
+    align-content: center;
+}
+
+#gameover{
+    font-size: 50px;
+    color: #ff0000;
+    margin-left: 140px;
+    margin-top: 200px;
+    width: 600px;
+    position: absolute;
+    z-index: 100;
+    font-weight: bold;
+}
+
+#buttonjump {
+    width: 600px;
+    height: 100px;
+    font-size: 50px;
+    background-color: #66FCF1;
+    border: none;
+}
+
+#buttonjump:hover {
+    background-color: #57d1c9;
+} 
+
+#buttonjump:active {
+    background-color: #47a59f;
+} 
+
+#restartgame {
+    width: 600px;
+    height: 100px;
+    font-size: 50px;
+    background-color: #ff0000;
+    border: none;
+}
+
+#restartgame:hover {
+    background-color: #ac0000;
+}
+
+#restartgame:disabled {
+    background-color: #680000;
+    color: black;
+}
+</style>
+</html>
