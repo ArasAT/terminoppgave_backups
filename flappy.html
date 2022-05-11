@@ -26,7 +26,7 @@ html {
     background-color: #66FCF1;
     position: relative;
     left: 600px;
-    animation: block 1.5s infinite linear;
+    animation: block 1s infinite linear;
     
 }
 @keyframes block{
@@ -40,7 +40,7 @@ html {
     position: relative;
     left: 600px;
     top: -500px;
-    animation: block 1.5s infinite linear;
+    animation: block 1s infinite linear;
     
 }
 #character{
@@ -53,7 +53,7 @@ html {
     
 }
 #score{
-    font-size: 70px;
+    font-size: 60px;
     color: #66FCF1;
     margin: auto;
     width: 600px;
@@ -63,7 +63,7 @@ html {
 #gameover{
     font-size: 50px;
     color: #ff0000;
-    margin-left: 140px;
+    text-align: center;
     margin-top: 200px;
     width: 600px;
     position: absolute;
@@ -71,26 +71,19 @@ html {
     font-weight: bold;
 }
 
-#buttonjump {
+#jumpdesc {
     width: 600px;
-    height: 100px;
-    font-size: 50px;
+    height: 50px;
+    font-size: 40px;
     background-color: #66FCF1;
     border: none;
+    color: black;
 }
-
-#buttonjump:hover {
-    background-color: #57d1c9;
-} 
-
-#buttonjump:active {
-    background-color: #47a59f;
-} 
 
 #restartgame {
     width: 600px;
     height: 100px;
-    font-size: 50px;
+    font-size: 45px;
     background-color: #ff0000;
     border: none;
 }
@@ -122,9 +115,11 @@ html {
 #backbuttongame:disabled {
     background-color: #3e928d;
 }
+
 </style>
 </head>
 <body>
+
     <div id="game">
         <p id="gameover"></p>
         <div id="block"></div>
@@ -132,14 +127,13 @@ html {
         <div id="character"></div>
     </div>
 
-    
         <p id="score">Score: 0</p>
         <center>
-        <button id="buttonjump" onclick="jump()">Jump (Space)</button>
-        <br><br>
+        <p id="jumpdesc">To Jump click <strong>Space</strong></p>
+        <br>
         <button id="restartgame" onClick="window.location.reload();">Restart (Enter)</button>
-        <br><br><br><br>
-        <input id="backbuttongame" type="button" value="Go back" onclick="history.back()">
+        <br><br>
+        <input id="backbuttongame" type="button" value="Go back" onclick="location.href = 'index.php'">
         </center>
         
         

@@ -75,11 +75,24 @@ function jump(){
 
 }
 
+
+
 //If character dies
 function die(){
+    //Game over text
+    var d = Math.random();
+    if (d < 0.005){
+        //Rick??
+        location.replace("https://www.youtube.com/watch?v=BBJa32lCaaY");
+    } else {
+        const randomtext = ["Game Over", "You suck btw", "Try harder", "Imagine losing", "Could not be me", "Try sucking less", "Mimic tear user", "-.-- --- ..- / ... ..- -.-. -.-", "Nice try", "Better luck next time"];
+        const random = Math.floor(Math.random() * randomtext.length);
+        var randomgameover = (random, randomtext[random]);
+    }
+    //Make the game blank and enable buttons
     character.style.top = 100 + "px";
     counter=0;
-    document.getElementById("gameover").innerHTML = "Game Over!";
+    document.getElementById("gameover").innerHTML = randomgameover;
     game.style.position = "relative";
     game.style.border = "1px solid red";
     character.style.position = "fixed";
