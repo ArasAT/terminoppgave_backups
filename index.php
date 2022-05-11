@@ -70,6 +70,7 @@ session_start();
                 <form method="get" action="Warrior_Fight.zip">
                     <button class="button" type="submit">Download Game</button>
                 </form>
+                <p class="hiddenp">Click space 5 times...</p>
             <br>
 
             

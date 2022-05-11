@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
 <style>
-    *{
+*{
     padding: 0;
     margin: 0;
 }
@@ -103,6 +103,25 @@ html {
     background-color: #680000;
     color: black;
 }
+
+#backbuttongame {
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+    color: #000000;
+    background-color: #66FCF1;
+    border: none;
+    font-size: 40px;
+    display: block;
+}
+
+#backbuttongame:hover {
+    background-color: #57d1c9;
+}
+
+#backbuttongame:disabled {
+    background-color: #3e928d;
+}
 </style>
 </head>
 <body>
@@ -113,12 +132,14 @@ html {
         <div id="character"></div>
     </div>
 
-
+    
         <p id="score">Score: 0</p>
         <center>
         <button id="buttonjump" onclick="jump()">Jump (Space)</button>
         <br><br>
         <button id="restartgame" onClick="window.location.reload();">Restart (Enter)</button>
+        <br><br><br><br>
+        <input id="backbuttongame" type="button" value="Go back" onclick="history.back()">
         </center>
         
         

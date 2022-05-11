@@ -7,8 +7,9 @@ var counter = 0;
 var stop = false;
 var score_sound = new Audio('score_sound.mp3');
 
-//Disable restart button
+//Disable buttons
 document.getElementById("restartgame").disabled = true;
+document.getElementById("backbuttongame").disabled = true;
 
 //Jump if space is pressed
 document.body.onkeyup = function(e) {
@@ -39,7 +40,8 @@ hole.addEventListener('animationiteration', () => {
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
-        character.style.top = (characterTop+3)+"px";
+        //Gravity strength
+        character.style.top = (characterTop+4)+"px";
     }
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
@@ -60,7 +62,8 @@ function jump(){
     var jumpInterval = setInterval(function(){
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
         if((characterTop>6)&&(jumpCount<15)){
-            character.style.top = (characterTop-5)+"px";
+            //Jump force
+            character.style.top = (characterTop-6)+"px";
         }
         if(jumpCount>20){
             clearInterval(jumpInterval);
@@ -78,6 +81,7 @@ function die(){
     counter=0;
     document.getElementById("gameover").innerHTML = "Game Over!";
     game.style.position = "relative";
+    game.style.border = "1px solid red";
     character.style.position = "fixed";
     block.style.position = "fixed";
     hole.style.position = "fixed";
@@ -86,4 +90,5 @@ function die(){
     character.remove();
     stop = true;
     document.getElementById("restartgame").disabled = false; 
+    document.getElementById("backbuttongame").disabled = false;
 }

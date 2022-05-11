@@ -101,7 +101,7 @@ session_start();
             {
                 buttonsign.style.display = "none";
                 buttonsignX.style.display = "block";
-                	//Don't user signup with clicking enter
+                	//Don't signup with clicking enter
                 $(document).on("keydown", "form", function(event) { 
                     return event.key != "Enter";
                 });

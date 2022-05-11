@@ -423,6 +423,10 @@ html {
     cursor: pointer;
 }
 
+.hiddenp {
+    color: #1F2833;
+}
+
 /*------------------------------Law Page*/
 
 #bigboxlaw{
