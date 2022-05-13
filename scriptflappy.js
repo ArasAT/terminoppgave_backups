@@ -3,6 +3,7 @@ var hole = document.getElementById("hole");
 var game = document.getElementById("game");
 var character = document.getElementById("character");
 var jumping = 0;
+var score = document.getElementById("score");
 var counter = 0;
 var stop = false;
 var score_sound = new Audio('score_sound.mp3');
@@ -10,6 +11,7 @@ var score_sound = new Audio('score_sound.mp3');
 //Disable buttons
 document.getElementById("restartgame").disabled = true;
 document.getElementById("backbuttongame").disabled = true;
+document.getElementById("savescore").disabled = true;
 
 //Jump if space is pressed
 document.body.onkeyup = function(e) {
@@ -32,7 +34,7 @@ hole.addEventListener('animationiteration', () => {
     hole.style.top = random + "px";
     counter++;
     character.style.backgroundColor = "orange";
-    document.getElementById("score").innerHTML = "Score: " + counter;
+    score.value = counter;
     document.getElementById("gameover").innerHTML = "";
     score_sound.play();
 });
@@ -81,11 +83,11 @@ function jump(){
 function die(){
     //Game over text
     var d = Math.random();
-    if (d < 0.005){
+    if (d < 0.01){
         //Rick??
         location.replace("https://www.youtube.com/watch?v=BBJa32lCaaY");
-    } else {
-        const randomtext = ["Game Over", "You suck btw", "Try harder", "Imagine losing", "Could not be me", "Try sucking less", "Mimic tear user", "-.-- --- ..- / ... ..- -.-. -.-", "Nice try", "Better luck next time"];
+    }else {
+        const randomtext = ["Game Over","You suck btw", "Try harder", "Imagine losing", "Could not be me", "Try sucking less", "Mimic tear user", "-.-- --- ..- / ... ..- -.-. -.-", "Nice try", "Better luck next time"];
         const random = Math.floor(Math.random() * randomtext.length);
         var randomgameover = (random, randomtext[random]);
     }
@@ -104,4 +106,5 @@ function die(){
     stop = true;
     document.getElementById("restartgame").disabled = false; 
     document.getElementById("backbuttongame").disabled = false;
+    document.getElementById("savescore").disabled = false; 
 }
