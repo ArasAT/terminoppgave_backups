@@ -51,8 +51,9 @@ CREATE TABLE `users` (
   `user_id` bigint NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
+  `gamescore` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +62,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (10,10578414552933274,'marie@sam.com','6d7033bc4500fb30bfebc83307e50811'),(11,80105727902321981,'max@max.no','202cb962ac59075b964b07152d234b70'),(12,660493695670436,'admin@admin.admin','21232f297a57a5a743894a0e4a801fc3'),(13,967383827,'rezon@gmail.com','e2843a949efd31efb396aa0217b4cc69');
+INSERT INTO `users` VALUES (10,10578414552933274,'marie@sam.com','6d7033bc4500fb30bfebc83307e50811',0),(11,80105727902321981,'max@max.no','202cb962ac59075b964b07152d234b70',0),(12,660493695670436,'admin@admin.admin','21232f297a57a5a743894a0e4a801fc3',33),(13,967383827,'rezon@gmail.com','e2843a949efd31efb396aa0217b4cc69',6),(15,3021468904,'dasdasd@daskdcfd.tghf','56a30fa38ffa0a6de97a60f5af2e6758',0),(16,9305487639,'test@test.com','098f6bcd4621d373cade4e832627b4f6',0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -74,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-11 13:17:04
+-- Dump completed on 2022-05-13 11:58:08
