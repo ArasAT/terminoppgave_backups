@@ -11,28 +11,35 @@ $user_data = check_login($con);
 $id = $user_data['id'];
 $gamescore = $user_data['gamescore'];
 
+//shows highest score with id
+//select id,max(gamescore) from users group by id order by max(gamescore) desc;
+
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         $gamescorenew = $_POST['gamescorelive'];
 
-        echo $gamescorenew;
+        //Check if current score is higher than your saved score
+        if ($gamescorenew > $gamescore)
+        {
+            //If current score is higher than saved score, save this current score
+            $query = "update users set gamescore = $gamescorenew where id = $id";
 
-        //$gamescorenew dont get any values from the input
-
-        $query = "update users set gamescore = $gamescorenew where id = $id";
-
-        $con->query($query);
-        
-
-        header("Location: flappy.php");
+            $con->query($query);
+            
+            header("Location: flappy.php");
+        }else {
+            
+            //Current score is not higher than saved score, alert and refresh site
+            echo '<script>alert("Your current score needs to be higher!"); window.location.replace("flappy.php");</script>';
+        } 
  
         
 
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
@@ -109,7 +116,7 @@ html {
 #jumpdesc {
     width: 600px;
     height: 50px;
-    font-size: 40px;
+    font-size: 35px;
     border: none;
     color: #66FCF1;
     text-align: left;
@@ -231,7 +238,7 @@ input[type=number] {
         <form method="POST">
             <span id="scoretext">Score: <input id="score" type="number" name="gamescorelive" placeholder="0" readonly></input></span>
             <center>
-            <p id="jumpdesc">To Jump click <strong>Space</strong></p>
+            <p id="jumpdesc">To Jump click <strong>Space</strong> or just <strong>click</strong></p>
             <input id="savescore" type="submit" value="Save this score">
         </form>
         

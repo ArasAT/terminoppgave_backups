@@ -85,7 +85,7 @@ function die(){
     var d = Math.random();
     if (d < 0.01){
         //Rick??
-        location.replace("https://www.youtube.com/watch?v=BBJa32lCaaY");
+        window.open("https://www.youtube.com/watch?v=BBJa32lCaaY");
     }else {
         const randomtext = ["Game Over","You suck btw", "Try harder", "Imagine losing", "Could not be me", "Try sucking less", "Mimic tear user", "-.-- --- ..- / ... ..- -.-. -.-", "Nice try", "Better luck next time"];
         const random = Math.floor(Math.random() * randomtext.length);
@@ -108,3 +108,5 @@ function die(){
     document.getElementById("backbuttongame").disabled = false;
     document.getElementById("savescore").disabled = false; 
 }
+
+
