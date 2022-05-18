@@ -22,7 +22,7 @@ session_start();
 
 			$con->query($query);
 
-			header("Location: login.php");
+			header("Location: index.php");
 			die;
 		}elseif (empty($email) || empty($text))
 		{
@@ -36,7 +36,7 @@ session_start();
 <head>
     <link rel="stylesheet" href="index.css">
     <style><?php include "index.css"; ?></style>
-	<title>Help Page</title>
+	<title>Help</title>
 </head>
 <body>
 
