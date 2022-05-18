@@ -18,7 +18,7 @@ session_start();
         if ($con->query($sql) === TRUE) {
             echo '<script>alert("User was successfully deleted"); window.location.replace("login.php");</script>';
         } else {
-            echo '<script>alert("Something went wrong :( Please contact us at the help page"")</script>';
+            echo '<script>alert("Something went wrong :( Please contact us at the help page");</script>';
         }
 
         
