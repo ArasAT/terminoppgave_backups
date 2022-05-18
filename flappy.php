@@ -15,6 +15,7 @@ $gamescore = $user_data['gamescore'];
 //select id,max(gamescore) from users group by id order by max(gamescore) desc;
 
 
+
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         $gamescorenew = $_POST['gamescorelive'];
@@ -42,7 +43,7 @@ $gamescore = $user_data['gamescore'];
 <html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
-    <title>Flappy Bird</title>
+    <title>Easteregg</title>
 <style>
 *{
     padding: 0;
@@ -50,6 +51,7 @@ $gamescore = $user_data['gamescore'];
 }
 html {
     background: linear-gradient(to right, #141e30, #243b55);
+    
 }
 #game{
     width: 600px;
@@ -57,8 +59,7 @@ html {
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
-    background-color: #243b55;
-    
+    background-color: #243b55;    
 }
 #block{
     width: 50px;
@@ -248,7 +249,7 @@ input[type=number] {
         </div>
         </center>
         <div id="highscore">Current Highscore: <?php echo $gamescore; ?></div>
-        
+    
         
         
         
