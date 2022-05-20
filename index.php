@@ -17,15 +17,21 @@ session_start();
 <head>
     <link rel="stylesheet" href="index.css">
     <style><?php include "index.css"; ?></style>
-	<title>Home Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Home</title>
 </head>
+
+
 
 <body>
 
     <center>
 
         <div id="bigbox">
+        <div id="upperbox">
+            <a class="material-icons" href="userinfo.php" style="font-size:40px">person</a>
             <a class="logout" href="logout.php">Logout</a>
+        </div>
     <!--About the game !-->
             <h1 class="h1text">Warrior Fight</h1> 
 
@@ -44,6 +50,7 @@ session_start();
                     If you do that your player will attack multiple times and you can't block anything. You fight just one
                     enemy but if you want to fight any more you'll have to wait for me to put it in the game.
                     If you have any ideas or glitches to report, contact me here: <a class="help_text_link" href="help2.php">help</a>.
+                    This game is made for windwos, so it may not work on other operating systems.
                     </p>
                 </div>
             <br>
@@ -95,7 +102,7 @@ var enterkeycount = 0;
         enterkeycount++;
         if(enterkeycount == 5)
         {
-            document.location.href = 'flappy.html';
+            document.location.href = 'flappy.php';
         }
     }
     });

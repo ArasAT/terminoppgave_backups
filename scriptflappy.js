@@ -109,4 +109,3 @@ function die(){
     document.getElementById("savescore").disabled = false; 
 }
 
-

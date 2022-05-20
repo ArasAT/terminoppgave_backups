@@ -12,7 +12,7 @@ session_start();
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
-        // sql to delete a record
+        //Delete user with id that is logged in 
         $sql = "delete from users where id = $id";
 
         if ($con->query($sql) === TRUE) {
@@ -49,9 +49,10 @@ session_start();
                 <div id="textuserinfo"><strong>Email: </strong><?php echo $user_data['user_name'] ?></div>
                 <div id="textuserinfo"><strong>Password: </strong>Request to view password at: <a class="link" href="help2.php">10.2.2.78/help2.php</a></div>
                 <div id="textuserinfo"><strong>Id: </strong><?php echo $user_data['id'] ?></div>
-                <div id="textuserinfo"><strong>Gamescore: </strong><?php echo $user_data['gamescore'] ?></div>
+                <div id="textuserinfo"><strong>Hidden Game Score: </strong><?php echo $user_data['gamescore'] ?></div>
             </div>
             
+            <!--Checkbox and delete button-->
         <form method="post">
             <div id="areyousuredelete">
                     <input id="checkBoxuser" type="checkbox" onclick="areyousure()">
@@ -68,6 +69,7 @@ session_start();
 </body>
     <script>
         
+        //"Are you sure you want to delete this user?" checkbox
         function areyousure()
         {
             var checkBoxuser = document.getElementById("checkBoxuser");
@@ -86,7 +88,8 @@ session_start();
             }
 
         }
-        
+
+
 
     </script>
 </html>
