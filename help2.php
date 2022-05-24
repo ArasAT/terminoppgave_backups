@@ -54,8 +54,10 @@ session_start();
                 	</div>                       
 			<p id="the-count">0 / 1000</p>
                        
-                   <input id="buttonhelp" type="submit" value="Submit">
-
+                    <input id="buttonhelp" type="submit" value="Submit">
+				    
+					<input id="gotofaq" type="button" value="FAQ" onclick="faq()">
+					
                 </div>
 
 		</form>
@@ -66,6 +68,10 @@ session_start();
 		    let count = (myText.value).length;
 		    document.getElementById("the-count").textContent = `${count} / 1000`;
 		});
+
+		function faq(){
+			window.location.href="faq.php";  
+		}
 	</script>
 </body>
 
