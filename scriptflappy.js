@@ -83,10 +83,13 @@ function jump(){
 //If character dies
 function die(){
     //Game over text
-    var d = Math.random();
-    if (d < 0.01){
+    var d = Math.floor(Math.random() * 101);
+    if (d < 5){
         //Rick??
         window.open("https://www.youtube.com/watch?v=BBJa32lCaaY");
+        const randomtext = ["Enjoy This"];
+        const random = Math.floor(Math.random() * randomtext.length);
+        var randomgameover = (random, randomtext[random]);
     }else {
         const randomtext = ["Game Over","You suck btw", "Try harder", "Imagine losing", "Could not be me", "Try sucking less", "Mimic tear user", "-.-- --- ..- / ... ..- -.-. -.-", "Nice try", "Better luck next time"];
         const random = Math.floor(Math.random() * randomtext.length);

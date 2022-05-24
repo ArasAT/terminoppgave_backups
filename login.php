@@ -58,7 +58,7 @@ session_start();
 <head>
     <link rel="stylesheet" href="index.css">
     <style><?php include "index.css"; ?></style>
-	<title>Login Page</title>
+	<title>Login</title>
 </head>
 <body>
 

@@ -1,0 +1,23 @@
+Mysql/Mariadb:
+
+users
+Field		Type		Null	Key	Default		Extra
+id		bigint		NO	PRI	NULL		auto_increment
+user_id		bigint		NO		NULL
+user_name	varchar(30)	NO		NULL
+password	varchar(30)	NO		NULL
+
+
+
+create database login_db;
+use login_db;
+create table users (id bigint not null primary key auto_increment, user_id bigint not null, user_name varchar(50) not null, password varchar(100) not null, gamescore varchar(20));
+create table help (id bigint not null primary key auto_increment, title varchar(100) not null, text varchar(1000) not null);
+
+
+help
+Field		Type		Null	Key	Default			Extra
+id		bigint		NO	PRI	NULL			auto_increment
+title		varchar(100)	NO		NULL
+text		varchar(1000)	NO		NULL
+

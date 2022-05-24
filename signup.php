@@ -23,12 +23,12 @@ session_start();
 
             $select = mysqli_query($con, "SELECT * FROM users WHERE user_name = '".$_POST['user_name']."'");
             if(mysqli_num_rows($select)) {
-                echo '<script>alert("Username already exists")</script>';
+                echo '<script>alert("Email already exists")</script>';
             }
 
 			//save to database
 			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+			$query = "insert into users (user_id,user_name,password,gamescore) values ('$user_id','$user_name','$password', 0)";
 
 			$con->query($query);
 
@@ -46,7 +46,7 @@ session_start();
 <head>
     <link rel="stylesheet" href="index.css">
     <style><?php include "index.css"; ?></style>
-	<title>Signup Page</title>
+	<title>Signup</title>
 </head>
 <body>
 
