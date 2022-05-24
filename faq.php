@@ -13,9 +13,9 @@
 
     <center>
     
-        <div id="bigbox">
+        <div id="bigboxfaq">
         <button id="backbuttonfaq" type="button" onclick="location.href = 'help2.php'">Go back</button>    
-        <div id="upperbox">
+        <div id="upperboxfaq">
         </div>
     <!--About the game !-->
             <h1 class="h1text">FAQ</h1> 
@@ -40,6 +40,13 @@
                     <p class="normaltextfaq">
                         Yes :)
                     </p>
+                
+                <br>
+                <h3 class="h3textfaq">Where can I see my password?</h3>
+                
+                <p class="normaltextfaq">
+                    If you want to see your password, you'll need to ask for it on the help-site. 
+                </p>
 
         </div>
         
