@@ -77,7 +77,8 @@ session_start();
                 <form method="get" action="Warrior_Fight.zip">
                     <button class="button" type="submit">Download Game</button>
                 </form>
-                <p class="hiddenp">Click space 5 times...</p>
+                <br>
+                <button class="button" type="button" onclick="window.location='flappy.php';">Flappy Ball</button>
             <br>
 
             
@@ -119,11 +120,11 @@ var enterkeycount = 0;
 
             if (text.style.display === "block") {
                 text.style.display = "none";
-                box.style.height = "630px";
+                box.style.height = "700px";
                 about.innerHTML = "About game &#9660";
             } else {
                 text.style.display = "block";
-                box.style.height = "1100px";
+                box.style.height = "1200px";
                 about.innerHTML = "About game &#9650";
             }
             

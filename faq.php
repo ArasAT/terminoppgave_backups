@@ -14,7 +14,7 @@
     <center>
     
         <div id="bigboxfaq">
-        <button id="backbuttonfaq" type="button" onclick="location.href = 'help2.php'">Go back</button>    
+        <button id="backbuttonfaq" type="button" onclick="history.back()">Go back</button>    
         <div id="upperboxfaq">
         </div>
     <!--About the game !-->
@@ -35,10 +35,10 @@
                     </p>
 
                 <br>
-                <h3 class="h3textfaq">Is there a hidden game on this website?</h3>
+                <h3 class="h3textfaq">Why does the ball in Flappy Ball turn gold?</h3>
                 
                     <p class="normaltextfaq">
-                        Yes :)
+                        Everytime you get a point the ball turns gold and makes a sound.
                     </p>
                 
                 <br>

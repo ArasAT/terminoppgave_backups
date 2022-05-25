@@ -49,7 +49,7 @@ session_start();
                 <div id="textuserinfo"><strong>Email: </strong><?php echo $user_data['user_name'] ?></div>
                 <div id="textuserinfo"><strong>Password: </strong>Request to view password at: <a class="link" href="help2.php">10.2.2.78/help2.php</a></div>
                 <div id="textuserinfo"><strong>Id: </strong><?php echo $user_data['id'] ?></div>
-                <div id="textuserinfo"><strong>Hidden Game Score: </strong><?php echo $user_data['gamescore'] ?></div>
+                <div id="textuserinfo"><strong>Flappy Ball Score: </strong><?php echo $user_data['gamescore'] ?></div>
             </div>
             
             <!--Checkbox and delete button-->

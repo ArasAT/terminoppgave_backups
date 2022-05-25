@@ -83,6 +83,7 @@ session_start();
                         <br><br>
                     <div class="help_box">
 						<a class="help_text">Having problems? Click </a><a class="help_text_link" href="help2.php">HERE</a>
+						<input id="gotofaq" type="button" value="FAQ" onclick="faq()">
                     </div>
                 </div>
 
@@ -93,5 +94,11 @@ session_start();
 			<p class="phpwarning">wrong username or password!</p>
 		
 </div>
+
+<script>
+		function faq(){
+		window.location.href="faq.php";  
+		}
+</script>
 </body>
 </html>
