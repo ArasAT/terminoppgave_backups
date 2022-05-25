@@ -7,7 +7,7 @@ var score = document.getElementById("score");
 var counter = 0;
 var stop = false;
 var score_sound = new Audio('score_sound.mp3');
-var heheha_sound = new Audio('heheha.mp3');
+
 
 //Disable buttons
 document.getElementById("restartgame").disabled = true;
@@ -95,8 +95,7 @@ function die(){
         const random = Math.floor(Math.random() * randomtext.length);
         var randomgameover = (random, randomtext[random]);
     }
-    //Make the game blank, enable buttons and play sound
-    heheha_sound.play();
+    //Make the game blank and enable buttons
     character.style.top = 100 + "px";
     counter=0;
     document.getElementById("gameover").innerHTML = randomgameover;
