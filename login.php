@@ -9,7 +9,7 @@ session_start();
 
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
-		//something was posted
+		//make inputs into variables
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
 
@@ -96,6 +96,7 @@ session_start();
 </div>
 
 <script>
+	//FAQ redirect
 		function faq(){
 		window.location.href="faq.php";  
 		}

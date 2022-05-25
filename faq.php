@@ -17,7 +17,7 @@
         <button id="backbuttonfaq" type="button" onclick="history.back()">Go back</button>    
         <div id="upperboxfaq">
         </div>
-    <!--About the game !-->
+    <!--FAQ-->
             <h1 class="h1text">FAQ</h1> 
 
                 <h3 class="h3textfaq">Why does it say this website is not secured?</h3>

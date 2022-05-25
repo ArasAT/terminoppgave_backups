@@ -63,12 +63,14 @@ session_start();
 		</form>
 	</div>
 	<script>
+		//Make textarea max input to 1000
 		let myText = document.getElementById("texthelp");
 		myText.addEventListener("input", () => {
 		    let count = (myText.value).length;
 		    document.getElementById("the-count").textContent = `${count} / 1000`;
 		});
 
+		//FAQ redirect
 		function faq(){
 			window.location.href="faq.php";  
 		}

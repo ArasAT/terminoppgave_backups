@@ -88,6 +88,7 @@ session_start();
 	</div>
 
     <script>
+        //Checkbox
         function checkTerms()
         {
             var checkBox = document.getElementById("checkBox");
@@ -110,6 +111,7 @@ session_start();
 
         }
 
+        //FAQ redirect
         function faq(){
 			window.location.href="faq.php";  
 		}
