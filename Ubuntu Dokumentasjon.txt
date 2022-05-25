@@ -26,3 +26,4 @@ anydesk
 libpam-google-authenticator
 tree
 git-all
+wine
